@@ -6,6 +6,7 @@ class GamePageState {
   final bool isGameOver;
   final bool isNewRecord;
   final bool isVictory;
+  final bool isContinue;
   final int record;
 
   GamePageState({
@@ -14,6 +15,7 @@ class GamePageState {
     this.isGameOver = false,
     this.isNewRecord = false,
     this.isVictory = false,
+    this.isContinue = false,
     this.record = 0,
   });
 
@@ -24,6 +26,7 @@ class GamePageState {
     bool? isGameOver,
     bool? isVictory,
     bool? isNewRecord,
+    bool? isContinue,
   }) =>
       GamePageState(
         gameBoard: gameBoard ?? this.gameBoard,
@@ -32,5 +35,6 @@ class GamePageState {
         isGameOver: isGameOver ?? this.isGameOver,
         isNewRecord: isNewRecord ?? this.isNewRecord,
         isVictory: isVictory ?? this.isVictory,
+        isContinue: isContinue ?? this.isContinue,
       );
 }

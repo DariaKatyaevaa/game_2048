@@ -49,7 +49,7 @@ class _GamePageState extends State<GamePage> {
         listener: (context, state) {
           if (state.isGameOver) {
             _showLooseDialogue(context);
-          } else if (state.isVictory) {
+          } else if (state.isVictory && !state.isContinue) {
             _showVictoryDialogue(context);
           }
         },
@@ -208,7 +208,7 @@ class _GamePageState extends State<GamePage> {
   void _showVictoryDialogue(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => const VictoryDialogueWidget(),
+      builder: (context) => VictoryDialogueWidget(continueFunction: _cubit.setContinue),
     );
   }
 

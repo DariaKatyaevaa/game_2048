@@ -83,6 +83,10 @@ class GamePageCubit extends Cubit<GamePageState> {
     _isVictory();
   }
 
+  void setContinue() {
+    emit(state.copyWith(isContinue: true));
+  }
+
   void dispose() async {
     _gameBoardInteractor.saveCurrentGameBoard(
       gameBoardSettings: state.gameBoard.gameBoardSize,

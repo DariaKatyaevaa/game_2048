@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:game_2048/presentation/pages/game_page/widgets/alert_dialogues/button_widget.dart';
 
 class VictoryDialogueWidget extends StatelessWidget {
-  const VictoryDialogueWidget({Key? key}) : super(key: key);
+  final VoidCallback continueFunction;
+
+  const VictoryDialogueWidget({
+    super.key,
+    required this.continueFunction,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +36,10 @@ class VictoryDialogueWidget extends StatelessWidget {
       actions: <Widget>[
         AlertDialogueButtonWidget(
           text: 'continue',
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () {
+            continueFunction();
+            Navigator.of(context).pop();
+          },
         )
       ],
     );
