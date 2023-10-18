@@ -11,13 +11,12 @@ square cannot be moved. Players have to find a way to make up a square with 2048
 also on the [Play Store](https://play.google.com/store/apps/details?id=com.elfindaria.game_2048).
 
 ## Previews
+<img src="/preview/0.png" width="30%"> <img src="/preview/1.png" width="30%"> <img src="/preview/2.png" width="30%">
 
-![app ui 1](/preview/0.png)
-![app ui 2](/preview/1.png)
-![app ui 3](/preview/2.png)
+<br/>
 
 ## Description
-
+<br>
 A clone of 2048 Game with different game board modes and themes. Made with Flutter. The state
 management used here is Cubit provided by BLoC, InheritedWidget for theme changing.
 Used Hive for local storage. Dependency injection: GetIt. Dependency injection generator:
