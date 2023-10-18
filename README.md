@@ -12,9 +12,9 @@ also on the [Play Store](https://play.google.com/store/apps/details?id=com.elfin
 
 ## Previews
 
-![/preview/0.png]
-![/preview/1.png]
-![/preview/2.png]
+![app ui 1](/preview/0.png)
+![app ui 2](/preview/1.png)
+![app ui 3](/preview/2.png)
 
 ## Description
 
